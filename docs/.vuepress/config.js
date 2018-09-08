@@ -5,6 +5,8 @@ module.exports = {
     "/zh/": { lang: "zh-CN" }
   },
   themeConfig: {
+    //shows "Last updated" with the git commit time
+    lastUpdated: "Last Updated",
     // Assumes GitHub. Can also be a full GitLab url.
     repo: "rajaraodv/applitools-tutorials-app",
     // Customising the header label
