@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/rajaraodv/applitools-tutorials-app/issues"
   },
-  "homepage": "https://github.com/rajaraodv/applitools-tutorials-app#readme"
+  "homepage": "https://github.com/rajaraodv/applitools-tutorials-app#readme",
+  "dependencies": {
+    "vuepress": "^0.14.2"
+  }
 }
