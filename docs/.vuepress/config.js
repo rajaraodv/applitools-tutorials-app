@@ -43,6 +43,6 @@ module.exports = {
       }
       //  { text: "Features", link: "https://applitools.com/features?utm_source=tutorials&utm_medium=tutorials" }
     ],
-    sidebar: ["/", "/selenium-javascript", "/1st"]
+    sidebar: ["/", "/selenium-javascript", "/selenium-java"]
   }
 };

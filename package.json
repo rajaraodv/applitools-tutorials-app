@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/rajaraodv/applitools-tutorials-app#readme",
   "dependencies": {
+    "chromedriver": "^2.41.0",
     "vuepress": "^0.14.2"
   }
 }

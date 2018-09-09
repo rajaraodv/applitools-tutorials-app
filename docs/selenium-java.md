@@ -1,7 +1,7 @@
 ---
 sidebarDepth: 1
 ---
-# Selenium JavaScript
+# Selenium Java
 
 This quickstart has 6 parts with lot of gifs and pictures to help you quickly get upto speed and know how powerful Applitools' AI really is. Not that it will take about 20 minutes after you install the code. 
 
@@ -39,6 +39,10 @@ App page:
 
 #### Step 1.1: Install Pre-requisits
 
+::: tip
+The instructions are elaborate and are for a brand new machine. You may skip most of it(Steps 3, 4, 5 and 6) if you already have Java, JAVA_HOME, Maven, Chrome browser, Chromedriver all set up properly.
+:::
+
 1. Create Applitools account create it now to obtain your API key
 
 2. Please set the `APPLITOOLS_API_KEY` environment variable
@@ -47,30 +51,89 @@ App page:
 
     - On windows: `set APPLITOOLS_API_KEY='YOUR_API_KEY'`
 
-3. Install node.js from [https://nodejs.org​](https://nodejs.org​)
+3. Install Java's Java SE Development Kit (JDK) from [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+  - Set JDK's `JAVA_HOME` environment variable to so that the command line can find JDK
+      - Mac: 
 
-4. Install git from [https://git-scm.com​](https://git-scm.com​)
+        ##### Find the Java installation folder path.
+        - First find where the Java is installed on your mac.
+        - Run `/usr/libexec/java_home` in your Terminal
+        - You will see something like `/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home`. The path will vary depending on the version of the JDK and your Mac's OS version. We need to now set this folder as `JAVA_HOME` environment variable.
 
-5. Install Google Chrome browser from [https://www.google.com/chrome/](https://www.google.com/chrome/)
+        ##### Setup JAVA_HOME Environment variable
+        - Open `~/.bash_profile` file (Create one if it's missing).
+        - Add the line `export PATH="<PATH_TO_JDK_FOLDER>:$PATH"`. 
+        - Change the `<PATH_TO_JDK_FOLDER>` to the folder you got earlier.
+        - For example: `export PATH=/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home:$PATH` 
+        - Save it and close the file.
+        - Run `source ~/.bash_profile`. This will load the environment variables from the `~/.bash_profile` file.
+        - Run `$ echo $JAVA_HOME`. It shuld say something like: 
+`/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home`
+        
+        ##### Test your JAVA_HOME setup
+        - Run `javac --version` in your Terminal. It should show something like `javac 10.0.2`.
+        - Run `echo $JAVA_HOME` and it should show the path you set earlier.
+        
+      - Windows:
 
-6. Install `Chromedriver` that's appropriate for your Operating System and your Chrome browser's version from [http://chromedriver.chromium.org/downloads](http://chromedriver.chromium.org/downloads). For example, if your Chrome browser is v67-v69, download `ChromeDriver 2.41`. 
+        #### Find the Java installation folder path
+        - Typically it is something like `C:\Program Files\Java\jdk10.0.2`
+
+        ##### Setup JAVA_HOME Environment variable
+        - Navigate to `Computer (Right click) | Properties | Advanced System Settings | Advanced (Tab) | Environment variables | System Variables`. 
+        - Click on **New**
+        - Add `JAVA_HOME` as the **Variable Name**.
+        - Enter JDK installation path in the **Variable Value** field. Typically this looks something like: `C:\Progra~1\Java\jdk10.0.2`
+        - Click on `Save`
+
+        ##### Test your `JAVA_HOME` setup
+        - Restart your command line prompt to load the new environment variable.
+        - Run `javac --version` in your command line prompt. It should say something like `javac 10.0.2`.
+
+
+4. Download Maven binary Zip file from <a href="https://maven.apache.org/download.cgi" target="_blank">here</a>. 
+    - It should look something like `apache-maven-3.5.4-bin.zip` 
+    - Follow the installation instructions from <a href="https://maven.apache.org/install.html" target="_blank">here</a> to add it to the `PATH`. 
+    
+    ::: tip
+      1. It's better if you add it permanently to the the environment so when you open a new Terminal the values will persist. Otherwise, you may have to redo it for everytime you open the Terminal. This means you should put it in the `~/.bash_profile` file (Mac) or in System variables in Windows. For more, see steps for adding `Chromedriver` to the `PATH` below.
+      2. The Maven executable is inside `/bin` folder of the extracted Maven directory. **So you must include `/bin`**. It should look something like: `/Users/raja/apps/apache-maven-3.5.4/bin`
+    :::
+
+    ##### Test your Maven setup
+    - Make sure to restart the Terminal or Command line prompt to load the new environment variables.
+    - Run `mvn -v`. You should see something like below:
+    <img src="/mvn-test.png" alt="Maven test result" />
+
+    
+5. Install git from <a href="https://git-scm.com/" target="_blank">here</a>. If you are on Mac, you already have `git`.
+
+6. Install Google Chrome browser from <a href="https://www.google.com/chrome/" target="_blank">here</a>
+
+7. Install `Chromedriver` that's appropriate for your Operating System and your Chrome browser's version from <a href="http://chromedriver.chromium.org/downloads">here</a>. For example, if your Chrome browser is v67-v69, download `ChromeDriver 2.41`. 
 
     - Unzip ChromeDriver to any folder of your choice.
     - Add ChromeDriver's path to your system's `PATH` so Selenium can find it
-    - On Mac: 
-        - Open `~/.bash_profile` file (Create one if it's missing).
-        - Add `export PATH="<PATH_TO_YOUR_CHROME_DRIVER>:$PATH"` 
-        - Run `source ~/.bash_profile`. 
-        - For example, if the chromedriver is in `/Users/apps/chromedriver`, then it would be `export PATH="/Users/apps/:$PATH`
+    - Mac: 
 
-    - On Windows: 
+        - Open `~/.bash_profile` file (Create one if it's missing).
+        - Add `export PATH="<PATH_TO_YOUR_CHROME_DRIVER>:$PATH"`.
+          - For example, if the chromedriver is in `/Users/apps/chromedriver`, then it would be `export PATH="/Users/apps/:$PATH`.
+        - Save the file and go back to the Terminal.
+        - Run `source ~/.bash_profile`. This will load environment variables from `~/.bash_profile`.
+        
+
+    - Windows:
         - Navigate to `Computer (Right click) | Properties | Advanced System Settings | Advanced (Tab) | Environment variables | System Variables`. 
         - Select the line with `Path` key. 
         - Click on `Edit`. 
         - Add a  simicolon `;` to the end of the values and add the path where you have unzipped chromedriver. 
         - For example, if the chromedriver is in `c:\selenium\chromedriver`, then append `;c:\selenium` to the end of the `Path`. Finally save it.
-        - If everything went fine, and if you typed `chromedriver` in the command prompt, you should see something like below:
+    
+    If everything went fine, and if you typed `chromedriver` in the command prompt, you should see something like below:
         <img src="/chromedriver.png" alt="Chromedriver" />
+
+
 
 #### Step 1.2 Download the demo project
 
@@ -79,6 +142,7 @@ App page:
 2. Go to `Applitools-Selenium-JS-Quickstart` folder
 
 3. Run `npm install`
+
 
 
 #### Step 1.3 Run your first test
