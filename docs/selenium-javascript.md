@@ -16,13 +16,13 @@ The tutorial may feel like a long one but it's mainly because of all the gifs an
 
 - Part 3 - 🤖 Understand why Applitools AI is superior to pixel-by-pixel comparison
 
-- Part 4 -  ✅ Accepting 100s of changes by clicking a button instead of updating numerous tests
+- Part 4 -  ✅ Accepting hundreds of changes by clicking a button instead of updating numerous tests
 
 - Part 5 -  👁 Use advanced AI tools to work with real-world scenarios
 
 - Part 6 - 🔥 Code highlights
 
-- Part 7 -  🎉 Congratulations!
+- Part 7 -  🎉 Congratulations!!
 
 
 ## Part 1 - Setup environment and create a baseline
