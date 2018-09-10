@@ -351,7 +351,7 @@ var Capabilities = webdriver.Capabilities;
 var Builder = webdriver.Builder;
 var By = webdriver.By;
 ​
-var SeleniumSDK = require("eyes.selenium");
+var SeleniumSDK = require("eyes.selenium"); //Import Applitools eyes SDK
 var Eyes = SeleniumSDK.Eyes;
 var ConsoleLogHandler = SeleniumSDK.ConsoleLogHandler;
 ​
