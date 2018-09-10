@@ -3,7 +3,7 @@ sidebarDepth: 1
 ---
 # Selenium JavaScript
 
-This quickstart has 6 parts with lot of gifs and pictures to help you quickly get upto speed and know how powerful Applitools' AI really is. Not that it will take about 20 minutes after you install the code. 
+This quickstart has six parts with lot of gifs and pictures to help you quickly get upto speed and know how powerful Applitools' AI really is. Not that it will take about 20 minutes after you install the code. 
 
 ::: tip Note
 
