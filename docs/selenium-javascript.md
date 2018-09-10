@@ -29,7 +29,7 @@ The tutorial may feel like a long one but it's mainly because of all the gifs an
 
 **Test Overview:**
 
-In this part you will set up the environment to run the test locally and then store a baseline images of just the login page. We will use the app page later on.
+In this part, you will set up the environment to run the test locally and then store a baseline images of just the login page. We will use the app page later on.
 
 Login page:
 <img src="/login.png" alt="login page" />
