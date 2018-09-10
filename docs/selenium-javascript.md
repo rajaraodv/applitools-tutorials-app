@@ -362,7 +362,7 @@ console.log(testSelector);
 // Open a Chrome browser.
 var driver = new Builder().withCapabilities(Capabilities.chrome()).build();
 ​
-// Initialize the eyes SDK and set your private API key.
+// Initialize the Applitools Eyes SDK and set your private API key.
 var eyes = new Eyes();
 ​
 //⚠️️️  Please set the APPLITOOLS_API_KEY environment variable
