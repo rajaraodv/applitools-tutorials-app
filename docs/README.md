@@ -3,7 +3,6 @@ sidebarDepth: 0
 ---
 
 # Home
-
 <style>
 .cell {
   border-color:white;cellSpacing:10px;

@@ -1,6 +1,7 @@
 ---
 sidebarDepth: 1
 ---
+
 # Selenium JavaScript
 
 This quickstart has 6 parts with lot of gifs and pictures to help you quickly get upto speed and know how powerful Applitools' AI really is. Not that it will take about 20 minutes after you install the code. 
@@ -32,10 +33,10 @@ The tutorial may feel like a long one but it's mainly because of all the gifs an
 In this part you will set up the environment to run the test locally and then store a baseline images of just the login page. We will use the app page later on.
 
 Login page:
-<img src="/login.png" alt="login page" />
+<img style="zIndex:9999" src="/login.png" alt="login page" />
 
 App page:
-<img src="/app.png" alt="App page" />
+<img style="zIndex:9999" src="/app.png" alt="App page" />
 
 #### Step 1.1: Install Pre-requisits
 
@@ -70,7 +71,7 @@ App page:
         - Add a  simicolon `;` to the end of the values and add the path where you have unzipped chromedriver. 
         - For example, if the chromedriver is in `c:\selenium\chromedriver`, then append `;c:\selenium` to the end of the `Path`. Finally save it.
         - If everything went fine, and if you typed `chromedriver` in the command prompt, you should see something like below:
-        <img src="/chromedriver.png" alt="Chromedriver" />
+        <img data-zoomable src="/chromedriver.png" alt="Chromedriver" />
 
 #### Step 1.2 Download the demo project
 

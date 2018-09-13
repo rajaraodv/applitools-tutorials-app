@@ -1,5 +1,15 @@
 module.exports = {
   title: "Applitools",
+  head: [
+    [
+      "script",
+      { src: "https://unpkg.com/medium-zoom@1.0.2/dist/medium-zoom.min.js" }
+    ],
+    [
+      "script",
+      { src: "/mediumZoom.js" }
+    ]
+  ],
   locales: {
     "/": { lang: "en-US" },
     "/zh/": { lang: "zh-CN" }
