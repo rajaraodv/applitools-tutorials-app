@@ -4,7 +4,7 @@ sidebarDepth: 1
 
 # Selenium JavaScript
 
-This quickstart has 6 parts with lot of gifs and pictures to help you quickly get upto speed and know how powerful Applitools' AI really is. Not that it will take about 20 minutes after you install the code. 
+This quickstart has six parts with lot of gifs and pictures to help you quickly get upto speed and know how powerful Applitools' AI really is. Not that it will take about 20 minutes after you install the code. 
 
 ::: tip Note
 
@@ -17,20 +17,20 @@ The tutorial may feel like a long one but it's mainly because of all the gifs an
 
 - Part 3 - 🤖 Understand why Applitools AI is superior to pixel-by-pixel comparison
 
-- Part 4 -  ✅ Accepting 100s of changes by clicking a button instead of updating numerous tests
+- Part 4 -  ✅ Accepting hundreds of changes by clicking a button instead of updating numerous tests
 
 - Part 5 -  👁 Use advanced AI tools to work with real-world scenarios
 
 - Part 6 - 🔥 Code highlights
 
-- Part 7 -  🎉 Congratulations!
+- Part 7 -  🎉 Congratulations!!
 
 
 ## Part 1 - Setup environment and create a baseline
 
 **Test Overview:**
 
-In this part you will set up the environment to run the test locally and then store a baseline images of just the login page. We will use the app page later on.
+In this part, you will set up the environment to run the test locally and then store a baseline images of just the login page. We will use the app page later on.
 
 Login page:
 <img style="zIndex:9999" src="/login.png" alt="login page" />
@@ -352,7 +352,7 @@ var Capabilities = webdriver.Capabilities;
 var Builder = webdriver.Builder;
 var By = webdriver.By;
 ​
-var SeleniumSDK = require("eyes.selenium");
+var SeleniumSDK = require("eyes.selenium"); //Import Applitools eyes SDK
 var Eyes = SeleniumSDK.Eyes;
 var ConsoleLogHandler = SeleniumSDK.ConsoleLogHandler;
 ​
@@ -363,7 +363,7 @@ console.log(testSelector);
 // Open a Chrome browser.
 var driver = new Builder().withCapabilities(Capabilities.chrome()).build();
 ​
-// Initialize the eyes SDK and set your private API key.
+// Initialize the Applitools Eyes SDK and set your private API key.
 var eyes = new Eyes();
 ​
 //⚠️️️  Please set the APPLITOOLS_API_KEY environment variable
